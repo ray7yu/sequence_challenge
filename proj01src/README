@@ -1,0 +1,34 @@
+Required files to submit:
+    1. Cell.cpp 
+    2. NSequence.hpp 
+    3. FunClassTemp.hpp
+    4. Makefile
+    5. <fsuid>_driver.cpp
+
+Point distributions:
+
+10 points: 
+    -5- Have completed all the required functions in #1, #2, and #3
+    -5- Submitted files can compile via a Makefile #4 and produce all programs
+
+15 points: 
+    -5- Correct implementation of Cell.cpp 
+    -5- Correct implementation of getDiff and findDiff
+    -5- TestCell.cpp passes without an error
+
+30 points: 
+    -5- Correct implementation of Accessors: isEmpty, getSize, getCapacity, printout
+    -10- Correct implementation of Big Five, growCapacity
+    -10- Correct implementation of [], insert/remove, push/pop, get{First,Last}
+    -5- Program from TestSeq.cpp passes without an error
+
+30 points: MaxSubRange.cpp
+    -5- Cubic solution for MaxSubRange.cpp passes without an error
+    -5- Quadric solution for MaxSubRange.cpp passes without an error
+    -10- Linear solution for MaxSubRange.cpp passes without an error
+    -10- Logarithmic solution for MaxSubRange.cpp passes without an error
+
+15 points:
+    -10- Provided a driver program that searches in a NSequence with 15+ IntCell objects 
+       and returns a maximal sequence of 3+ items. 
+    -5- Driver can produce output in a format similar to the output of MaxSubRange.cpp 

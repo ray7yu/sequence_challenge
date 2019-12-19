@@ -1,0 +1,30 @@
+[yuw@mac proj01]$ make 
+g++ -std=c++11 -c MaxSubRange.cpp
+g++ -std=c++11 -c Cell.cpp
+g++ -std=c++11 -o MaxSubRange MaxSubRange.o Cell.o
+g++ -std=c++11 -c TestCell.cpp
+g++ -std=c++11 -o TestCell TestCell.o Cell.o
+g++ -std=c++11 -c TestSeq.cpp
+g++ -std=c++11 -o TestSeq TestSeq.o Cell.o
+
+[yuw@mac proj01]$ ./TestCell 
+V2[0] value:100
+Gap is: -95
+function template with int 3
+function template with IntCell: 200
+function+class template with IntCell: 10
+
+[yuw@mac proj01]$ ./TestSeq 
+v1 items:6
+ [0]=8 [1]=7 [2]=14 [3]=32 [4]=28 [5]=35
+v2 items:6
+ [0]=13 [1]=107 [2]=112 [3]=122 [4]=65 [5]=127
+v3 items:6
+ [0]=FFFF [1]=BBBB [2]=BBBC [3]=BBBE [4]=FFFJ [5]=BBBF
+
+[yuw@mac proj01]$ ./MaxSubRange 
+Sequence has 15 items: [0]=8 [1]=7 [2]=14 [3]=32 [4]=28 [5]=35 [6]=56 [7]=49 [8]=56 [9]=80 [10]=70 [11]=77 [12]=104 [13]=91 [14]=98
+Cubic func found 4 items: [2]=14 [3]=32 [4]=28 [5]=35
+Quadratic func found 4 items: [2]=14 [3]=32 [4]=28 [5]=35
+Linear func found 4 items: [2]=14 [3]=32 [4]=28 [5]=35
+Log func found 4 items: [2]=14 [3]=32 [4]=28 [5]=35
