@@ -10,24 +10,24 @@ using namespace std;
  */
 class IntCell
 {
-  public:
-    friend ostream & operator<< ( ostream & out, const IntCell & rhs)
-    {
-	out << rhs.read();
-	return out;
-    }
+public:
+  friend ostream &operator<<(ostream &out, const IntCell &rhs)
+  {
+    out << rhs.read();
+    return out;
+  }
 
-    /* XXX: you need to implement the following functions in Cell.cpp */
-    explicit IntCell( int initialValue = 0 );
-    int size( ) const;
-    int read( ) const;
-    void write( int x );
+  /* XXX: you need to implement the following functions in Cell.cpp */
+  explicit IntCell(int initialValue = 0);
+  int size() const;
+  int read() const;
+  void write(int x);
 
-    bool operator< ( const IntCell & rhs ) const;
-    int operator- (const IntCell & rhs) const; 
-   
-  private:
-    int storedValue;
+  bool operator<(const IntCell &rhs) const;
+  int operator-(const IntCell &rhs) const;
+
+private:
+  int storedValue;
 };
 
 #endif
