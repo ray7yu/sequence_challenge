@@ -1,6 +1,7 @@
 CXX=g++
 CXXFLAGS=-std=c++11
 
+SRC:=$(*.cpp)
 all: TestCell TestSeq MaxSubRange ryu7_driver
 
 TestCell: TestCell.o Cell.o
